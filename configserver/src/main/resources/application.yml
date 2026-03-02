@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: configdemo
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/HarshanaPrabhath/app-configuration
+          username: ${GIT_USER}
+          password: ${GIT_TOKEN}
+
+logging:
+  level:
+    root: info
+
+
+server:
+  port: 8888

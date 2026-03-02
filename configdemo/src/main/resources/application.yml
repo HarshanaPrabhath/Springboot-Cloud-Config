@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: configdemo
+
+  config:
+    import: optional:configserver:http://localhost:8888
+
+  profiles:
+    active: prod
+
+management:
+    endpoints:
+      web:
+        exposure:
+          include: refresh
+
+
+#
+#build:
+#  id: 101
+#  version: 1.2.3
+#  name: "Application-Build"
+#  type: "Application Build"
