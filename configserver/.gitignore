@@ -34,5 +34,4 @@ build/
 
 
 
-configserver/.env
-configdemo/.env
+.env
